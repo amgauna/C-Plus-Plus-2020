@@ -21,12 +21,12 @@ main()
        mediageral = mediageral + media;
        if (media >=7) 
           {                                                              
-            printf ("VOCE FOI APROVADO SUA MEDIA FINAL E %d", media);
+            printf ("Você foi aprovado, sua media final é %d", media);
             getch();  contadoraluno                           
           }
        else
           { 
-               printf ("VOCE FOI REPROVADO SUA MEDIA FINAL E %d", media);
+               printf ("Você foi reprovado, sua média final é %d", media);
                 getch();
            }
     }
