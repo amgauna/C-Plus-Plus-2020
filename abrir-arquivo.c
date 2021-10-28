@@ -6,9 +6,9 @@ main()
 	char *cp;
 	double d;
 
-	dest = "TESTE.TST";
+	dest = "TESTE.TXT";
 	if((fo = fopen(dest,"w")) == NULL) {
-		printf("Nao Posso ABRIR TESTE.TST");
+		printf("Nao Posso ABRIR TESTE.TXT");
 		exit();
 	}
 	c = 'A';
