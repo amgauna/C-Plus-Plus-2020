@@ -1,3 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <locale.h> /*// Biblioteca de acentuação*/
+#include <windows.h> /*// Biblioteca dos códigos do cmd*/
+#include <cmath> // Include the cmath library
+#include <iostream>
+#include <fstream>
+#include <string>
+
 struct addr
 {
   char nome[30];
