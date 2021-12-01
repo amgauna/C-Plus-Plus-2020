@@ -1,4 +1,14 @@
-/* Luiz, primeiro tentando acertar acesso com ponteiros de registro
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <locale.h> /*// Biblioteca de acentuação*/
+#include <windows.h> /*// Biblioteca dos códigos do cmd*/
+#include <cmath> // Include the cmath library
+#include <iostream>
+#include <fstream>
+#include <string>
+   
+/* primeiro tentando acertar acesso com ponteiros de registro
    SEM ordem alfabetica. Depois tentarei ordenar alfabeticamente.
    Este funciona adequadamente. */
    
@@ -69,7 +79,7 @@ enter()
    struct addr *old;
    int situacao;
    char lixo;
-   char *malloc();
+   char lista;
    do {
       last = (struct addr *)malloc(sizeof(lista));
       if (last == 0)
