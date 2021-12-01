@@ -1,3 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <locale.h> /*// Biblioteca de acentuação*/
+#include <windows.h> /*// Biblioteca dos códigos do cmd*/
+#include <iostream>
+#include <fstream>
+#include <string>
+
 main()	
 {
 	FILE *fo;
@@ -9,7 +18,7 @@ main()
 	dest = "TESTE.TXT";
 	if((fo = fopen(dest,"w")) == NULL) {
 		printf("Nao Posso ABRIR TESTE.TXT");
-		exit();
+		exit(fo);
 	}
 	c = 'A';
 	i = 999;
