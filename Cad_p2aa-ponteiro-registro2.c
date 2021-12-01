@@ -92,11 +92,11 @@ enter()
       inputs("Entre CEP: ",entra->cep,10); 
       if (start!=0) {
          localiza();
-         info->nome = entra->nome;
-         info->rua = entra->rua;
-         info->cidade = entra->cidade;
-         info->estado = entra->estado;
-         info->cep = info->cep;
+         *info->nome = entra->nome;
+         *info->rua = entra->rua;
+         *info->cidade = entra->cidade;
+         *info->estado = entra->estado;
+         *info->cep = info->cep;
          info->next = last->next;
          last->next = info;
          info->prior = last;
@@ -277,14 +277,3 @@ load()
 }
    
 
-
-
-
-
-
-
-
-    
-    
-     
-
