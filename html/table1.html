@@ -1,0 +1,85 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- Fig. J.10: table1.html     -->
+<!-- Criando uma tabela básica. -->
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Creating a basic table</title>
+   </head>
+
+   <body>
+
+      <!-- o tag <table> inicia a tabela -->
+      <table border = "1" width = "40%" 
+         summary = "This table provides information about
+            the price of fruit">
+
+         <!-- o tag <caption> resume o conteúdo da tabela -->
+         <!-- para ajudar deficientes visuais             -->
+         <caption><strong>Price of Fruit</strong></caption>
+
+         <!-- <thead> é a primeira seção da tabela      -->
+         <!-- ele formata a área de cabeçalho da tabela -->
+         <thead>
+            <tr> <!-- <tr> insere uma linha de tabela      -->
+               <th>Fruit</th> <!-- insere célula de título -->
+               <th>Price</th>
+            </tr>
+         </thead>
+
+         <!-- todo conteúdo de tabela é incluído dentro de <tbody> -->
+         <tbody>
+            <tr>
+               <td>Apple</td> <!-- insere célula de dados -->
+               <td>$0.25</td>
+            </tr>
+
+            <tr>
+               <td>Orange</td>
+               <td>$0.50</td>
+            </tr>
+
+            <tr>
+               <td>Banana</td>
+               <td>$1.00</td>
+            </tr>
+
+            <tr>
+               <td>Pineapple</td>
+               <td>$2.00</td>
+            </tr>
+         </tbody>
+
+         <!-- <tfoot> é última seção de tabela -->
+         <!-- formata rodapé da tabela         -->
+         <tfoot>
+            <tr>
+               <th>Total</th>
+               <th>$3.75</th>
+            </tr>
+         </tfoot>
+
+      </table>
+
+   </body>
+</html> 
+
+<!-- 
+/**************************************************************************
+ * (C) Copyright 1992-2005 Deitel & Associates, Inc. e                    *
+ * Pearson Education, Inc. Todos os direitos reservados                   *
+ *                                                                        *
+ * NOTA DE ISENÇÃO DE RESPONSABILIDADES: Os autores e o editor deste      *
+ * livro empregaram seus melhores esforços na preparação do livro. Esses  *
+ * esforços incluem o desenvolvimento, pesquisa e teste das teorias e     *
+ * programas para determinar sua eficácia. Os autores e o editor não      *
+ * oferecem nenhum tipo de garantia, explícita ou implicitamente, com     *
+ * referência a esses programas ou à documentação contida nesses livros.  *
+ * Os autores e o editor não serão responsáveis por quaisquer danos,      *
+ * acidentais ou conseqüentes, relacionados com ou provenientes do        *
+ * fornecimento, desempenho ou utilização desses programas.               *
+ **************************************************************************/
+-->
