@@ -1,13 +1,26 @@
 #include <stdio.h>
-#include <conio.h>
+#include <stdlib.h>
 #include <string.h>
+#include <iostream>
+#include <conio.h>
+#include <string> // Necessário para usar strings
+
+using namespace std;
+
 
 int main()
 {  int c,a,x,i,id;
-   char lg1[id]="Henrique";
-   char* login[id];
-   char senha[id]="123456";
-   char* senha1[id];
+
+   char login[id];
+   char senha[id];
+
+   string login1[id]={"Henrique"};
+   char senha1[id]={"123456"};
+
+
+   *login1="Henrique"->login[id];
+   *senha1="123456"->senha[id];
+
     printf("Digite o Login\n");
     scanf("%s",login[id]);
     x = strcmp(login[id],lg1[id]);
