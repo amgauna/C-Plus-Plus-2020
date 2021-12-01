@@ -1,4 +1,14 @@
-/* Luiz, primeiro tentando acertar acesso com ponteiros de registro
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <locale.h> /*// Biblioteca de acentuação*/
+#include <windows.h> /*// Biblioteca dos códigos do cmd*/
+#include <cmath> // Include the cmath library
+#include <iostream>
+#include <fstream>
+#include <string>
+
+/* primeiro tentando acertar acesso com ponteiros de registro
    SEM ordem alfabetica. Depois tentarei ordenar alfabeticamente.
    Este funciona adequadamente. */
    
@@ -8,7 +18,7 @@ struct addr
   char rua[40];
   char cidade[18];
   char estado[02];
-  char cep[09];
+  char cep[05];
   char lixao[10];
   struct addr *next;    /* ponteiro da prox entrada */
   struct addr *prior;   /* ponteiro p/ entrada anterior */
@@ -66,7 +76,7 @@ menu_select()
 enter()
 { 
    struct addr *info;
-   char *malloc();
+   char lista;
    do {
       info = (struct addr *)malloc(sizeof(lista));
       if (info == 0)
